@@ -38,7 +38,7 @@
             "value": {
               "ID": "1",
               "Description": "Figurine Max MS",
-              "Couleur": "Rose"
+              "Couleur": "Bleu"
             }
           },
           "type": "object",
@@ -58,7 +58,7 @@
               "type": "string"
             },
             "Couleur": {
-              "example": "Rose",
+              "example": "Bleu",
               "type": "string"
             }
           }
