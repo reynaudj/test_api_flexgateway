@@ -38,7 +38,7 @@
             "value": {
               "ID": "1",
               "Description": "Figurine Max MS",
-              "Couleur": "gris"
+              "Couleur": "Jaune"
             }
           },
           "type": "object",
@@ -54,7 +54,7 @@
               "type": "string"
             },
             "Description": {
-              "example": "Figurine Max MuleSoft",
+              "example": "Figurine Max MS",
               "type": "string"
             },
             "Couleur": {
