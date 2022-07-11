@@ -1,0 +1,68 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Test API",
+      "version": "1.0"
+    },
+    "paths": {
+      "/products": {
+        "get": {
+          "responses": {
+            "200": {
+              "description": "",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/Product"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "servers": [
+            {
+              "url": "http://localhost:8081/api"
+            }
+          ]
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "Product": {
+          "example": {
+            "strict": true,
+            "value": {
+              "ID": "1",
+              "Description": "Figurine Max MuleSoft",
+              "Couleur": "gris"
+            }
+          },
+          "type": "object",
+          "additionalProperties": true,
+          "required": [
+            "ID",
+            "Description",
+            "Couleur"
+          ],
+          "properties": {
+            "ID": {
+              "example": "1",
+              "type": "string"
+            },
+            "Description": {
+              "example": "Figurine Max MuleSoft",
+              "type": "string"
+            },
+            "Couleur": {
+              "example": "Gris",
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
