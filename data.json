@@ -1,0 +1,17 @@
+[
+    {
+      "ID": "1",
+      "Description": "Figurine Max MuleSoft",
+      "Couleur": "gris"
+    },
+    {
+      "ID": "2",
+      "Description": "Tasse motif marbré",
+      "Couleur": "rose"
+    },
+    {
+      "ID": "3",
+      "Description": "Chaussettes Bob l'éponge",
+      "Couleur": "bleu"
+    }
+  ]

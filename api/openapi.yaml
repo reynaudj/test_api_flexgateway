@@ -1,0 +1,47 @@
+openapi: 3.0.0
+info:
+  title: Test API
+  version: "1.0"
+servers:
+- url: /
+paths:
+  /products:
+    get:
+      operationId: productsGET
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Product'
+                type: array
+          description: ""
+      servers:
+      - url: http://localhost:8081/api
+      x-eov-operation-handler: controllers/DefaultController
+components:
+  schemas:
+    Product:
+      additionalProperties: true
+      example:
+        strict: true
+        value:
+          ID: "1"
+          Description: Figurine Max MS
+          Couleur: Rose
+      properties:
+        ID:
+          example: "1"
+          type: string
+        Description:
+          example: Figurine Max MS
+          type: string
+        Couleur:
+          example: Rose
+          type: string
+      required:
+      - Couleur
+      - Description
+      - ID
+      type: object
