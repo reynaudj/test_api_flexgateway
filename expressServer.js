@@ -43,6 +43,7 @@ class ExpressServer {
     //   Couleur: Rose`));
 
     this.app.get('/products', (req, res) => res.send(importData));
+    this.app.get('/orders', (req, res) => res.send(importData));
 
 
 
