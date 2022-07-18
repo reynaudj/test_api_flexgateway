@@ -33,6 +33,31 @@
         }
       },
       "/orders":{
+                "get": {
+          "responses": {
+            "200": {
+              "description": "",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/Product"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "servers": [
+            {
+              "url": "http://localhost:8081/api"
+            },
+            {
+              "url": "https://productsapinodejsbyjustine.herokuapp.com"
+            }
+          ]
+        }
 
       }
     },
