@@ -27,7 +27,7 @@
               "url": "http://localhost:8081/api"
             },
             {
-              "url": "https://productsapinodejsbyjustine.herokuapp.com/products"
+              "url": "https://productsapinodejsbyjustine.herokuapp.com"
             }
           ]
         }
